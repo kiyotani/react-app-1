@@ -13,13 +13,13 @@ function CountByButton (props) {
   //インクリメントする関数
   const onIncrement = () => {
     //setCountでcountの値を更新します
-    changeCount(props.displayCount + 1);
+    changeCount(Number(props.displayCount) + 1);
   }
 
   //デクリメントする関数
   const onDecrement = () => {
     //setCountでcountの値を更新します
-    changeCount(props.displayCount - 1);
+    changeCount(Number(props.displayCount) - 1);
   }
 
   return (
