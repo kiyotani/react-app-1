@@ -89,9 +89,9 @@ class Counter extends Component
     return (
       <div>
         <input name="countUpdateType" type="radio" id="typeButton" value="button" onChange={() => this.changeUpdateType('button')} checked={this.state.updateType == 'button'}/>
-        <label for="typeButton">ボタン</label>
+        <label htmlFor="typeButton">ボタン</label>
         <input name="countUpdateType" type="radio" id="typeInput" value="text" onChange={() => this.changeUpdateType('text')} checked={this.state.updateType == 'text'}/>
-        <label for="typeInput">直接入力</label>
+        <label htmlFor="typeInput">直接入力</label>
         {this.state.bindControl()}
       </div>
     );
